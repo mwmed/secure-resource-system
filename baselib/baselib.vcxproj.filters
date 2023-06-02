@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="base_includes.h" />
+    <ClInclude Include="file_util.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="c_array.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="c_scalarlength.h">
+      <Filter>message</Filter>
+    </ClInclude>
+    <ClInclude Include="crc32.h">
+      <Filter>hash</Filter>
+    </ClInclude>
+    <ClInclude Include="nzip.h">
+      <Filter>crypt</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="util">
+      <UniqueIdentifier>{31001d58-f124-4311-a9b0-13d2aa988912}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="message">
+      <UniqueIdentifier>{7fa085cc-24d5-4484-b92a-6cce8ff279d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hash">
+      <UniqueIdentifier>{6daa3921-e230-4969-b0fa-4e8eee007931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypt">
+      <UniqueIdentifier>{ef79300b-5564-46b9-b519-de68ecc94948}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="file_util.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="crc32.cpp">
+      <Filter>hash</Filter>
+    </ClCompile>
+    <ClCompile Include="nzip.cpp">
+      <Filter>crypt</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

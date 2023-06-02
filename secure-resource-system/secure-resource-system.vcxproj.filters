@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="resource">
+      <UniqueIdentifier>{37fcd28a-a412-4d13-8b0d-4480ba262555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\objects">
+      <UniqueIdentifier>{f92179d4-5fbb-49b2-97a1-b3b52110df5b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="c_resource.h">
+      <Filter>resource\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="resource_base_includes.h" />
+    <ClInclude Include="baselib_includes.h" />
+    <ClInclude Include="c_resourcedirectory.h">
+      <Filter>resource\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="c_baseresource.h">
+      <Filter>resource\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="c_resourcesystem.h">
+      <Filter>resource</Filter>
+    </ClInclude>
+    <ClInclude Include="secure_resource.h">
+      <Filter>resource</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="c_resourcedirectory.cpp">
+      <Filter>resource\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="c_baseresource.cpp">
+      <Filter>resource\objects</Filter>
+    </ClCompile>
+    <ClCompile Include="c_resourcesystem.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+    <ClCompile Include="secure_resource.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
