@@ -29,6 +29,8 @@ int main()
 
     load_resource_tests();
 
+    //save_resource_tests();
+
     system("pause");
 }
 

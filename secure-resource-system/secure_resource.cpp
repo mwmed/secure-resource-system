@@ -22,6 +22,20 @@ namespace resource
 	{
 		return resourcesystem->load_resources_from_main_file();
 	}
+	c_resource* get_resource(std::string directory_name, std::string resource_name)
+	{
+		c_resource* result = nullptr;
+
+		if (resourcesystem->m_directories.find(directory_name) != resourcesystem->m_directories.end())
+		{
+			auto dir = resourcesystem->m_directories[directory_name];
+			if (dir->m_resources.find(resource_name) != dir->m_resources.end())
+			{
+				result = dir->m_resources[resource_name];
+			}
+		}
+		return result;
+	}
 	void create_resource_in_directory(std::string directory_name, std::string resource_path, std::string resource_name)
 	{
 		resourcesystem->add_resource_to_directory(directory_name, resource_path, resource_name);

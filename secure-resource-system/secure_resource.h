@@ -1,6 +1,6 @@
 #pragma once
 #include "baselib_includes.h"
-
+#include "c_resource.h"
 
 
 
@@ -15,4 +15,6 @@ namespace resource {
 	void extract_resources();
 
 	bool load_resources_main();
+
+	c_resource* get_resource(std::string directory_name, std::string resource_name);
 }
