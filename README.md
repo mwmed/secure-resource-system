@@ -13,6 +13,8 @@ Resource Loading: The saved resources can be loaded into the system for further 
 
 Resource Extraction: The system provides functionality to extract the loaded resources as needed.
 
+Resource Access: The resource::get_resource function allows retrieval of the resource data as a byte array, encapsulated within the c_resource class.
+
 # Usage
 To utilize the Secure Resource System, follow these steps:
 
@@ -22,6 +24,12 @@ Load the resources using resource::load_resources_main().
 
 Extract the loaded resources for further processing or usage using resource::extract_resources().
 
+Access resource data using the resource::get_resource function, which returns a c_resource object containing the resource data as a byte array.
+
+Example usage: c_resource imageResource = resource::get_resource("image", "logo.png");
+
+The c_resource object provides methods to manipulate and access the resource data, such as get_data() to retrieve the byte array.
+
 (Optional) If you want to save new resources, follow these additional steps:
 
 a. Create a directory using resource::create_directory(directory_name).
@@ -30,7 +38,7 @@ b. Create resources within the directory using resource::create_resource_in_dire
 
 c. Save all created resources using resource::save_resources().
 
-(Optional) Uncomment the save_resource_tests() function in the main() method to execute the saving functionality.
+
 
 Feel free to explore the code and make any necessary modifications to suit your requirements.
 
@@ -40,4 +48,4 @@ This system employs encryption and hash techniques to ensure resource security. 
 # Contribution
 Contributions to this project are welcome! If you have any suggestions, improvements, or bug fixes, please feel free to submit a pull request or open an issue for discussion.
 
-Once again, you can customize the Git note according to your project's specific details and requirements.
+Again, feel free to customize the Git note according to your project's specific details and requirements.
