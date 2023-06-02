@@ -26,9 +26,9 @@ Extract the loaded resources for further processing or usage using resource::ext
 
 Access resource data using the resource::get_resource function, which returns a c_resource object containing the resource data as a byte array.
 
-Example usage: c_resource imageResource = resource::get_resource("image", "logo.png");
+Example usage: c_resource* imageResource = resource::get_resource("image", "logo.png");
 
-The c_resource object provides methods to manipulate and access the resource data, such as get_data() to retrieve the byte array.
+
 
 (Optional) If you want to save new resources, follow these additional steps:
 
